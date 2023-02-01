@@ -34,4 +34,5 @@ It was released in March 2022.
 
 ## Credits
 > https://github.com/Redmi-K50/device_xiaomi_rubens
+
 > https://github.com/wbs306/device_xiaomi_mt6895-common
