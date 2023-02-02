@@ -15,7 +15,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/rubens/device.mk)
 
 PRODUCT_DEVICE := rubens
-PRODUCT_NAME := lrubens
+PRODUCT_NAME := rubens
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22041211AC
 PRODUCT_MANUFACTURER := Xiaomi
