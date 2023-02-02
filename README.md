@@ -1,4 +1,4 @@
-Copyright (C) 2022 The LineageOS Project
+Copyright (C) 2022 The ProtonAOSP Project
 # Device tree for Redmi K50 (rubens) - OSS
 
 The Redmi K50 (codenamed _"rubens"_) is a high-end, mid-range smartphone from Xiaomi.
