@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MKAFILES := \
-	$(LOCAL_DIR)/rubens.mk
+	$(DEVICE_PATH)/rubens.mk 
 
 COMMON_LUNCH_CHOICES := \
 	rubens-eng \
