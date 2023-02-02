@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MKAFILES := \
-	$(DEVICE_PATH)/rubens.mk 
+	$(LOCAL_DIR)/aosp_rubens.mk
 
 COMMON_LUNCH_CHOICES := \
-	rubens-eng \
-	rubens-userdebug \
-	rubens-user
+	aosp_rubens-eng \
+	aosp_rubens-userdebug \
+	aosp_rubens-user
