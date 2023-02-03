@@ -1296,8 +1296,8 @@ vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+# vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
+# vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib/liboemcrypto.so
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
@@ -1804,7 +1804,7 @@ vendor/lib64/libsfplugin_ccodec_utils.so
 vendor/lib64/libstagefright_bufferpool@2.0.1.so
 
 # Media (OMX)
-etc/seccomp_policy/mediacodec.policy
+# etc/seccomp_policy/mediacodec.policy
 lib/libdatasource.so
 lib/libdmabufheap.so
 lib/libged_sys.so
@@ -2133,8 +2133,8 @@ vendor/etc/usb_audio_accessory_only_policy_configuration.xml
 vendor/etc/vendor-apns-conf.xml
 vendor/etc/vintf/manifest/AHBF@2.1-service.xml
 vendor/etc/vintf/manifest/fod.xml
-vendor/etc/vintf/manifest/gnss-default.xml
-vendor/etc/vintf/manifest/gnss@2.1-service.xml
+# vendor/etc/vintf/manifest/gnss-default.xml
+# vendor/etc/vintf/manifest/gnss@2.1-service.xml
 vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
 vendor/etc/vintf/manifest/manifest.microtrust.xml
 vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
@@ -2892,7 +2892,7 @@ vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml
-vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
+# vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib/libkeystore-wifi-hidl.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
