@@ -26,11 +26,7 @@ android_app {
 
     optimize: {
         proguard_flags_files: ["proguard.flags"],
-    },
-
-    required: [
-        "disp_feature"
-    ]
+    }
 }
 
 // cc_binary {
