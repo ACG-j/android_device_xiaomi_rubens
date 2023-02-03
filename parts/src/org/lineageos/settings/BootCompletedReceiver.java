@@ -28,12 +28,14 @@ import android.os.SystemProperties;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
+import org.lineageos.settings.utils.FileUtils;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     private static final boolean DEBUG = false;
     private static final String TAG = "XiaomiParts";
     private static final String DC_DIMMING_ENABLE_KEY = "dc_dimming_enable";
+    private static final String DC_DIMMING_NODE = "sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
@@ -46,7 +48,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean dcDimmingEnabled = sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false);
-        SystemProperties.set("persist.sys.parts.dc.enable", dcDimmingEnabled ? "1" : "0");
+        FileUtils.writeLine(DC_DIMMING_NODE, dcDimmingEnabled ? "08 01" : "08 00");
 
     }
 }

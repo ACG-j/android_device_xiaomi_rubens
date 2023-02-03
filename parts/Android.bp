@@ -33,12 +33,12 @@ android_app {
     ]
 }
 
-cc_binary {
-	name: "disp_feature",
-	srcs: [
-		"disp_feature.cpp",
-	],
-    header_libs: [
-        "generated_kernel_headers",
-    ],
-}
+// cc_binary {
+// 	name: "disp_feature",
+// 	srcs: [
+// 		"disp_feature.cpp",
+// 	],
+//     header_libs: [
+//         "generated_kernel_headers",
+//     ],
+// }

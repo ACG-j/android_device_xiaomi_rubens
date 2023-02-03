@@ -23,11 +23,13 @@ import android.content.SharedPreferences;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
-import android.os.SystemProperties;
+
+import org.lineageos.settings.utils.FileUtils;
 
 public class DcDimmingTileService extends TileService {
 
     private static final String DC_DIMMING_ENABLE_KEY = "dc_dimming_enable";
+    private static final String DC_DIMMING_NODE = "sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param";
 
     private void updateUI(boolean enabled) {
         final Tile tile = getQsTile();
@@ -52,7 +54,7 @@ public class DcDimmingTileService extends TileService {
         super.onClick();
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         final boolean enabled = !(sharedPrefs.getBoolean(DC_DIMMING_ENABLE_KEY, false));
-        SystemProperties.set("persist.sys.parts.dc.enable", enabled ? "1" : "0");
+        FileUtils.writeLine(DC_DIMMING_NODE, enabled ? "08 01" : "08 00");
         sharedPrefs.edit().putBoolean(DC_DIMMING_ENABLE_KEY, enabled).commit();
         updateUI(enabled);
     }
